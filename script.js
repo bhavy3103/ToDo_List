@@ -62,7 +62,7 @@ function deleted(itemindex) {
 }
 
 function clearstr() {
-    if (confirm("Do you realy want to clear ?"));
+    if (confirm("Do you really want to clear ?"));
     console.log("Clearing the storage...");
     localStorage.clear();
     update();
