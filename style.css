@@ -1,0 +1,17 @@
+.container {
+    min-height: calc(50vh - 10px - 12vh);
+}
+
+.flex_all_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center{
+    /* border: 0.2px solid gray; */
+    color: rgb(5, 67, 67);
+    border-radius: 8px;
+    text-shadow: rgb(83, 138, 138) 1px 0 10px;
+    /* background-color: #282828; */
+}
