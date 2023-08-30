@@ -14,6 +14,8 @@ function getanupdate() {
         localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
     }
     update();
+    document.getElementById('title').value=null;
+    document.getElementById('description').value=null;
 
 }
 function update() {
@@ -30,9 +32,9 @@ function update() {
     }
     // populate the table
     let tablebody = document.getElementById('tablebody');
-    let str = '';
+    let tasks = '';
     itemJsonArray.forEach((element, index) => {
-        str += `
+        tasks += `
         <tr>
                 <th scope="row">${index + 1}</th>
                 <td>${element[0]}</td>
@@ -42,7 +44,7 @@ function update() {
         `;
 
     });
-    tablebody.innerHTML = str;
+    tablebody.innerHTML = tasks;
 };
 add = document.getElementById("add");
 add.addEventListener("click", getanupdate);
